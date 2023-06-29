@@ -42,3 +42,40 @@
 .navbar ul li:hover::after{
     width: 100%;
 }
+
+.content{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 75px;
+    margin-top: 5%;
+}
+
+.content h2{
+    font-size: 60;
+    margin-top: 10%;
+}
+
+.content p{
+    margin: 1%;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #9c9486;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
