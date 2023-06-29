@@ -79,3 +79,9 @@ button{
     cursor: pointer;
 }
 
+button:hover
+{
+    transition: 1s;
+    background-color: #9c9486;
+}
+
