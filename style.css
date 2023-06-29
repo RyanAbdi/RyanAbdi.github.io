@@ -104,6 +104,6 @@ button:hover{
 
 button:not(:hover) {
     transition: border-color 2s;
-    transition-delay: 0.25s;
+    transition-delay: 0.25s; 
     border: 2px solid #9c9486; 
 }
