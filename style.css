@@ -7,16 +7,38 @@
     width: 100%;
     height: 100vh;
     background-color: #414952;
-
+    background-size: cover;
+    overflow-x: hidden; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
 }
 .navbar{
-    width: 85%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20;
     margin: auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content:  right;
+    background-color: #30414b;
 }
+
+.navbar h1 {
+    margin-left: 2%;
+    flex: 1;
+    justify-content: left;
+    color: #fff;
+}
+.navbar a {
+    flex: 1;
+    text-decoration: none;
+}
+
 .navbar ul li {
     list-style: none;
     display: inline-block;
@@ -43,24 +65,31 @@
     width: 100%;
 }
 
-.content{
-    width: 100%;
+.content {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+}
+.text{
+    flex: 1;
+    margin-left: 5%;
+    text-align: left;
+    width: 65%;
+    height: 40%;
     position: absolute;
-    text-align: center;
     color: #fff;
 }
 
-.content h1{
+.text h1{
     font-size: 75px;
     margin-top: 5%;
 }
 
-.content h2{
+.text h2{
     font-size: 60;
-    margin-top: 10%;
 }
 
-.content p{
+.text p{
     margin: 1%;
     font-weight: 100;
     line-height: 25px;
@@ -106,4 +135,16 @@ button:not(:hover) {
     transition: border-color 2s;
     transition-delay: 0.25s; 
     border: 2px solid #9c9486; 
+}
+
+img {
+    border-radius: 25px;
+    height: auto;
+    max-width: 25%;
+}
+
+.pfp {
+    margin-right: 5%;
+    flex: 1;
+    text-align: right;
 }
