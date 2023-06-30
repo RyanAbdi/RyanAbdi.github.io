@@ -1,30 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 100vh;
     background-color: #414952;
     background-size: cover;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
     z-index: 1;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     font-weight: bold;
-    font-size: 20;
+    font-size: 20px;
     margin: auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content:  right;
+    justify-content: right;
     background-color: #30414b;
 }
 
@@ -34,6 +34,7 @@
     justify-content: left;
     color: #fff;
 }
+
 .navbar a {
     flex: 1;
     text-decoration: none;
@@ -45,13 +46,14 @@
     margin: 0 20px;
     position: relative;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-
 }
-.navbar ul li::after{
+
+.navbar ul li::after {
     content: '';
     height: 3px;
     width: 0%;
@@ -61,41 +63,44 @@
     bottom: -5px;
     transition: 0.25s;
 }
-.navbar ul li:hover::after{
+
+.navbar ul li:hover::after {
     width: 100%;
 }
 
 .content {
-    margin-top: 10%;
+    margin-top: 1%;
     display: flex;
     align-items: center;
 }
-.text{
+
+.text {
     flex: 1;
     margin-left: 5%;
     text-align: left;
     width: 65%;
-    height: 40%;
+    max-width: 50%;
+    max-height: 350px;
+    height: auto;
     position: absolute;
     color: #fff;
 }
 
-.text h1{
+.text h1 {
     font-size: 75px;
-    margin-top: 5%;
 }
 
-.text h2{
-    font-size: 60;
+.text h2 {
+    font-size: 60px;
 }
 
-.text p{
+.text p {
     margin: 1%;
     font-weight: 100;
     line-height: 25px;
 }
 
-button{
+button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -111,9 +116,9 @@ button{
     z-index: 1;
 }
 
-span{
+span {
     background: #9c9486;
-    height: 100%;  
+    height: 100%;
     width: 0%;
     border-radius: 25px;
     position: absolute;
@@ -123,28 +128,30 @@ span{
     transition: 1s;
 }
 
-button:hover span{
+button:hover span {
     width: 100%;
 }
 
-button:hover{
+button:hover {
     border-color: transparent;
 }
 
 button:not(:hover) {
     transition: border-color 2s;
-    transition-delay: 0.25s; 
-    border: 2px solid #9c9486; 
+    transition-delay: 0.25s;
+    border: 2px solid #9c9486;
 }
 
 img {
     border-radius: 25px;
     height: auto;
-    max-width: 25%;
+    max-width: 40%;
+    max-height: 70vh;
 }
 
 .pfp {
-    margin-right: 5%;
+    margin-top: 1%;
+    margin-right: 15%;
     flex: 1;
     text-align: right;
 }
