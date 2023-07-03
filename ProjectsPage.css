@@ -70,18 +70,18 @@
 
 .content {
     margin-top: 1%;
+    flex-wrap: wrap;
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .text {
-    flex: 1;
     margin-left: 5%;
+    margin-bottom: 5%;
     text-align: left;
     color: #fff;
-    width: 65%;
-    max-width: 600px;
+    width: 35%;
 }
 
 .text h1 {
@@ -91,14 +91,25 @@
 
 .text h2 {
     font-size: 60px;
-    margin-top: 5px;
+    margin-top: 1%;
 }
 
 .text p {
     margin-top: 5%;
     font-weight: 100;
     line-height: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
+}
+
+.logo img {
+    max-height: 500px;
+    border-radius: 25px;
+}
+
+.logo {
+    text-align: right;
+    margin-right: 5%;
+    max-width: 50%;
 }
 
 button {
@@ -143,18 +154,3 @@ button:not(:hover) {
     border: 2px solid #9c9486;
 }
 
-img {
-    max-width: 60%;
-    max-height: 500px;
-    min-height: 100px;
-    min-width: 100px;
-    border-radius: 25px;
-    margin-bottom: 150px;
-}
-
-.logo {
-    margin-top: 150px;
-    margin-right: 20%;
-    flex: 1;
-    text-align: right;
-}
