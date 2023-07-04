@@ -137,7 +137,7 @@ span {
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 button:hover span {
@@ -149,7 +149,7 @@ button:hover {
 }
 
 button:not(:hover) {
-    transition: border-color 2s;
+    transition: border-color 0.5s;
     transition-delay: 0.25s;
     border: 2px solid #9c9486;
 }
