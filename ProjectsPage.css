@@ -70,46 +70,36 @@
 
 .content {
     margin-top: 1%;
-    flex-wrap: wrap;
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.text {
-    margin-left: 5%;
-    margin-bottom: 5%;
-    text-align: left;
-    color: #fff;
-    width: 35%;
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2%;
 }
 
-.text h1 {
-    font-size: 75px;
-    margin-bottom: 15%;
+.text, .logo {
+    width: 100%; /* Adjust the width as needed */
+    margin-left: 10%;
+    margin-bottom: 2%;
+    font-size: larger;
+    color: white;
 }
 
 .text h2 {
-    font-size: 60px;
-    margin-top: 1%;
-}
-
-.text p {
-    margin-top: 5%;
-    font-weight: 100;
-    line-height: 25px;
-    margin-bottom: 5%;
+    font-size: 45px;
+    margin-bottom: 2%;
 }
 
 .logo img {
-    max-height: 500px;
+    max-width: 80%;
+    height: auto;
     border-radius: 25px;
-}
-
-.logo {
-    text-align: right;
-    margin-right: 5%;
-    max-width: 50%;
 }
 
 button {
@@ -153,4 +143,3 @@ button:not(:hover) {
     transition-delay: 0.25s;
     border: 2px solid #9c9486;
 }
-
