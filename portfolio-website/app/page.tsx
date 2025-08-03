@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
-import { TypewriterEffectSmooth } from "@/src/components/ui/typewriter-effect";
-import { FlipWords } from "@/src/components/ui/flip-words";
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { FlipWords } from "@/components/ui/flip-words";
 import pfp from "@/src/Images/HarbourPicture.jpg";
 import Image from "next/image";
 import { text } from "stream/consumers";
@@ -44,7 +44,7 @@ export default function Home() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowFlipWords(true);
-        }, 2200);
+        }, 3200);
 
         return () => clearTimeout(timer);
     }, []);
@@ -55,17 +55,15 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-4 items-center w-full justify-center">
                     <h2 className="text-2xl z-20 md:text-4xl lg:text-7xl font-bold text-center font-sans">
                         <div className="mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-                            <div className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">
+                            <div className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 w-[35rem]">
                                 <h1>
                                     <TypewriterEffectSmooth words={name} />
                                 </h1>
-                                <br />
-                                <div className="text-4xl mx-auto font-bold text-blue-500 min-h-[3.5rem]">
-                                    <h2 className="flex items-center gap-2 justify-center">
+                                <div className="text-4xl mx-auto font-bold text-blue-500">
+                                    <h2 className="flex items-center">
                                         {showFlipWords ? (
                                             <>
-                                                I am a{" "}
-                                                <span className="inline-block w-[17ch] text-left">
+                                                <span className="inline-block w-[20ch] text-left">
                                                     <FlipWords
                                                         words={words}
                                                         duration={1000}
@@ -73,8 +71,8 @@ export default function Home() {
                                                 </span>
                                             </>
                                         ) : (
-                                            <span className="invisible inline-block w-[22ch]">
-                                                I'm a {words[0]}
+                                            <span className="invisible inline-block">
+                                                Invisible Text
                                             </span>
                                         )}
                                     </h2>
