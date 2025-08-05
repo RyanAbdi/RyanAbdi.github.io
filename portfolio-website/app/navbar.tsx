@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 
+import winter from "@/src/Images/Winter-Messages1.jpg";
+
 export function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
@@ -10,48 +12,76 @@ export function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Services">
+        <MenuItem setActive={setActive} active={active} item="About Me">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/">Work Expierence</HoveredLink>
+            <HoveredLink href="/">Education</HoveredLink>
+            <HoveredLink href="/">About me</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Products">
+        <MenuItem setActive={setActive} active={active} item="Projects">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
-              title="Algochurn"
+              title="Winter Messages"
               href="https://algochurn.com"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
+              src={winter}
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
-              title="Tailwind Master Kit"
+              title="Multiplayer Battleship"
               href="https://tailwindmasterkit.com"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
-              title="Moonbeam"
+              title="Infinity Obby"
+              href="https://algochurn.com"
+              src="https://assets.aceternity.com/demos/algochurn.webp"
+              description="Prepare for tech interviews like never before."
+            />
+            <ProductItem
+              title="Toronto Kitty Cab"
               href="https://gomoonbeam.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
-              title="Rogue"
+              title="Art Higher or Lower"
+              href="https://userogue.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="406 Trades"
+              href="https://userogue.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="Multiverse Adventure"
+              href="https://userogue.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="Arcade Ganes in Python"
+              href="https://userogue.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+            <ProductItem
+              title="Obstacle course simulator"
               href="https://userogue.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
+        <MenuItem setActive={setActive} active={active} item="Links">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/hobby">LinkedIn</HoveredLink>
+            <HoveredLink href="/individual">Github</HoveredLink>
+            <HoveredLink href="/team">Resume</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
