@@ -36,7 +36,7 @@ export const BackgroundBeamsWithCollision = ({
     }
 
       const generateBeams = (width: number) => {
-        const beamCount = 0;
+        const beamCount = 30;
         const newBeams = Array.from({ length: beamCount }, () => {
             const randomX = Math.floor(Math.random() * width);
             return {

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 
-import winter from "@/src/Images/Winter-Messages1.jpg";
+import { winter, battleship } from "@/src/Images";
 
 export function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -25,13 +25,13 @@ export function Navbar({ className }: { className?: string }) {
               title="Winter Messages"
               href="https://algochurn.com"
               src={winter}
-              description="Prepare for tech interviews like never before."
+              description="Real-time messaging app created using React and Firebase"
             />
             <ProductItem
               title="Multiplayer Battleship"
               href="https://tailwindmasterkit.com"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project"
+              src={battleship}
+              description="Multiplayer Battleship using React and Websockets created for CPS 630"
             />
             <ProductItem
               title="Infinity Obby"
