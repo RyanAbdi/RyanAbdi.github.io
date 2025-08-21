@@ -15,7 +15,7 @@ export function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
     const path = usePathname();
 
-    if (path === "/resume") {
+    if (path === "/resume" || path === "/transcript") {
         return null;
     }
     return (
@@ -36,8 +36,8 @@ export function Navbar({ className }: { className?: string }) {
                 <MenuItem setActive={setActive} active={active} item="About Me">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/work">Work Expierence</HoveredLink>
-                        <HoveredLink href="/">Education</HoveredLink>
-                        <HoveredLink href="/">About me</HoveredLink>
+                        <HoveredLink href="/education">Education</HoveredLink>
+                        <HoveredLink href="/about">About me</HoveredLink>
                     </div>
                 </MenuItem>
                 <MenuItem setActive={setActive} active={active} item="Projects">
@@ -107,7 +107,7 @@ export function Navbar({ className }: { className?: string }) {
                             Github
                         </HoveredLink>
                         <HoveredLink href="/resume">Resume</HoveredLink>
-                        <HoveredLink href="/resume">Transcript</HoveredLink>
+                        <HoveredLink href="/transcript">Transcript</HoveredLink>
                     </div>
                 </MenuItem>
             </Menu>
