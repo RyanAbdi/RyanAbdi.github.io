@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function about() {
     return (
         <div className="w-screen h-screen pt-40 px-20">

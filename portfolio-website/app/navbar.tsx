@@ -44,55 +44,55 @@ export function Navbar({ className }: { className?: string }) {
                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
                             title="Winter Messages"
-                            href="https://algochurn.com"
+                            href="/winter"
                             src={winter}
                             description="Real-time messaging app created using React and Firebase"
                         />
                         <ProductItem
                             title="Multiplayer Battleship"
-                            href="https://tailwindmasterkit.com"
+                            href="/battleship"
                             src={battleship}
                             description="Multiplayer Battleship using React and Websockets created for CPS 630"
                         />
                         <ProductItem
                             title="Infinity Obby"
-                            href="https://algochurn.com"
+                            href="/infinity-obby"
                             src="https://assets.aceternity.com/demos/algochurn.webp"
                             description="Prepare for tech interviews like never before."
                         />
                         <ProductItem
                             title="Toronto Kitty Cab"
-                            href="https://gomoonbeam.com"
+                            href="Toronto-kitty-cab"
                             src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
                             description="Never write from scratch again. Go from idea to blog in minutes."
                         />
                         <ProductItem
                             title="Art Higher or Lower"
-                            href="https://userogue.com"
+                            href="/art"
                             src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                         <ProductItem
                             title="406 Trades"
-                            href="https://userogue.com"
+                            href="/406"
                             src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                         <ProductItem
                             title="Multiverse Adventure"
-                            href="https://userogue.com"
+                            href="/multiverse"
                             src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                         <ProductItem
                             title="Arcade Ganes in Python"
-                            href="https://userogue.com"
+                            href="/arcade"
                             src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                         <ProductItem
                             title="Obstacle course simulator"
-                            href="https://userogue.com"
+                            href="/obby"
                             src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
