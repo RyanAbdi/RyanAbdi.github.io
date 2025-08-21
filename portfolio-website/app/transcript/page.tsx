@@ -1,6 +1,6 @@
 "use client";
 
-export default function ResumePage() {
+export default function TranscriptPage() {
   return (
     <div className="w-full h-screen flex flex-col">
       <button 
