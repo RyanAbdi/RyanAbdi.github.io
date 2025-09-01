@@ -88,7 +88,7 @@ export function Navbar({ className }: { className?: string }) {
                             title="Arcade Ganes in Python"
                             href="/arcade"
                             src="Pong.jpg"
-                            description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                            description="A collection of classic arcade games built in Python, featuring Pong, Guess the Number, and Rock Paper Scissors."
                         />
                         {/* <ProductItem
                             title="Obstacle course simulator"
