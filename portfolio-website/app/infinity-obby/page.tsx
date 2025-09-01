@@ -29,7 +29,7 @@ export default function winter() {
                 <div className="flex justify-center bg-transparent">
                     <img
                         src="/InfinityObby.jpg"
-                        alt="Winter Messages Screenshot"
+                        alt="Infinity Obby Screenshot"
                         className="rounded-lg shadow-lg max-h-96 object-contain"
                     />
                 </div>

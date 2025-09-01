@@ -64,7 +64,7 @@ export function Navbar({ className }: { className?: string }) {
                             title="Toronto Kitty Cab"
                             href="Toronto-Kitty-Cab"
                             src="TCC2.png"
-                            description="Never write from scratch again. Go from idea to blog in minutes."
+                            description="CPS510 project: Database management system with table creation, editing, and custom SQL queries."
                         />
                         <ProductItem
                             title="Art Higher or Lower"
@@ -75,7 +75,7 @@ export function Navbar({ className }: { className?: string }) {
                         <ProductItem
                             title="406 Trades"
                             href="/406"
-                            src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+                            src="406Logo.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                         <ProductItem
@@ -90,12 +90,12 @@ export function Navbar({ className }: { className?: string }) {
                             src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
-                        <ProductItem
+                        {/* <ProductItem
                             title="Obstacle course simulator"
                             href="/obby"
                             src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-                        />
+                        /> */}
                     </div>
                 </MenuItem>
                 <MenuItem setActive={setActive} active={active} item="Links">

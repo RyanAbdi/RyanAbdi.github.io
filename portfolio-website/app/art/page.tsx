@@ -44,7 +44,7 @@ export default function art() {
                 <div className="flex justify-center bg-transparent">
                     <img
                         src="Art.png"
-                        alt="Winter Messages Screenshot"
+                        alt="Art Higher or Lower Screenshot"
                         className="rounded-lg shadow-lg max-h-96 object-contain"
                     />
                 </div>

@@ -46,7 +46,7 @@ export default function TorontoKittyCab() {
                 <div className="flex justify-center bg-transparent">
                     <img
                         src="/TCC2.png"
-                        alt="Winter Messages Screenshot"
+                        alt="Toronto Kitty Cab Screenshot"
                         className="rounded-lg shadow-lg max-h-96 object-contain"
                     />
                 </div>
