@@ -52,13 +52,13 @@ export function Navbar({ className }: { className?: string }) {
                             title="Multiplayer Battleship"
                             href="/battleship"
                             src={battleship}
-                            description="Multiplayer Battleship using React and Websockets created for CPS 630"
+                            description="Multiplayer Battleship using React and WebSockets created for CPS 630"
                         />
                         <ProductItem
                             title="Infinity Obby"
                             href="/infinity-obby"
-                            src="https://assets.aceternity.com/demos/algochurn.webp"
-                            description="Prepare for tech interviews like never before."
+                            src="InfinityObby.jpg"
+                            description="An infinitely generating obstacle course game created in the Roblox engine with multiplayer"
                         />
                         <ProductItem
                             title="Toronto Kitty Cab"
