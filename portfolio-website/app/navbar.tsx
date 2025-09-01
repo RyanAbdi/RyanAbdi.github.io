@@ -62,8 +62,8 @@ export function Navbar({ className }: { className?: string }) {
                         />
                         <ProductItem
                             title="Toronto Kitty Cab"
-                            href="Toronto-kitty-cab"
-                            src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+                            href="Toronto-Kitty-Cab"
+                            src="TCC2.png"
                             description="Never write from scratch again. Go from idea to blog in minutes."
                         />
                         <ProductItem
