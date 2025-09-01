@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function winter() {
+export default function InfinityObby() {
     return (
         <div className="pt-40 px-20">
             <h1 className="text-white text-center mb-8">Infinity Obby</h1>

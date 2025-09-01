@@ -70,24 +70,24 @@ export function Navbar({ className }: { className?: string }) {
                             title="Art Higher or Lower"
                             href="/art"
                             src="Art.png"
-                            description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                            description="Interactive game where players guess which of two paintings is more valuable."
                         />
                         <ProductItem
                             title="406 Trades"
                             href="/406"
                             src="406Logo.png"
-                            description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                            description="406-Trades is a stock market simulator that lets users practice trading with real-time data."
                         />
                         <ProductItem
                             title="Multiverse Adventure"
                             href="/multiverse"
-                            src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                            description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                            src="Multiverse.png"
+                            description="Multiverse Adventure is a game where players progress through unique worlds, collecting resources."
                         />
                         <ProductItem
                             title="Arcade Ganes in Python"
                             href="/arcade"
-                            src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+                            src="Pong.jpg"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                         {/* <ProductItem
