@@ -46,7 +46,7 @@ export default function multiverse() {
                 </div>
                 <div className="flex justify-center bg-transparent">
                     <img
-                        src="/Multiverse.png"
+                        src="./Multiverse.png"
                         alt="Multiverse adventure Screenshot"
                         className="rounded-lg shadow-lg max-h-96 object-contain"
                     />
