@@ -1,0 +1,116 @@
+"use client";
+import React, { useState } from "react";
+import {
+    HoveredLink,
+    Menu,
+    MenuItem,
+    ProductItem,
+} from "@/components/ui/navbar-menu";
+import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
+
+import { winter, battleship } from "@/public";
+
+export function Navbar({ className }: { className?: string }) {
+    const [active, setActive] = useState<string | null>(null);
+    const path = usePathname();
+
+    if (path === "/resume" || path === "/transcript") {
+        return null;
+    }
+    return (
+        <div
+            className={cn(
+                "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50",
+                className
+            )}
+        >
+            <Menu setActive={setActive}>
+                <a
+                    href="/"
+                    className="cursor-pointer text-blue-500 hover:opacity-[0.9] text-3xl font-bold"
+                    onMouseEnter={() => setActive(null)} // close any open dropdown on hover
+                >
+                    Home
+                </a>
+                <MenuItem setActive={setActive} active={active} item="About Me">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="/work">Work Expierence</HoveredLink>
+                        <HoveredLink href="/education">Education</HoveredLink>
+                        <HoveredLink href="/about">About me</HoveredLink>
+                    </div>
+                </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="Projects">
+                    <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+                        <ProductItem
+                            title="Winter Messages"
+                            href="/winter"
+                            src={winter}
+                            description="Real-time messaging app created using React and Firebase"
+                        />
+                        <ProductItem
+                            title="Multiplayer Battleship"
+                            href="/battleship"
+                            src={battleship}
+                            description="Multiplayer Battleship using React and WebSockets created for CPS 630"
+                        />
+                        <ProductItem
+                            title="Infinity Obby"
+                            href="/infinity-obby"
+                            src="InfinityObby.jpg"
+                            description="An infinitely generating obstacle course game created in the Roblox engine with multiplayer"
+                        />
+                        <ProductItem
+                            title="Toronto Kitty Cab"
+                            href="Toronto-Kitty-Cab"
+                            src="TCC2.png"
+                            description="CPS510 project: Database management system with table creation, editing, and custom SQL queries."
+                        />
+                        <ProductItem
+                            title="Art Higher or Lower"
+                            href="/art"
+                            src="Art.png"
+                            description="Interactive game where players guess which of two paintings is more valuable."
+                        />
+                        <ProductItem
+                            title="406 Trades"
+                            href="/406"
+                            src="406Logo.png"
+                            description="406-Trades is a stock market simulator that lets users practice trading with real-time data."
+                        />
+                        <ProductItem
+                            title="Multiverse Adventure"
+                            href="/multiverse"
+                            src="Multiverse.png"
+                            description="Multiverse Adventure is a game where players progress through unique worlds, collecting resources."
+                        />
+                        <ProductItem
+                            title="Arcade Ganes in Python"
+                            href="/arcade"
+                            src="Pong.jpg"
+                            description="A collection of classic arcade games built in Python, featuring Pong, Guess the Number, and Rock Paper Scissors."
+                        />
+                        {/* <ProductItem
+                            title="Obstacle course simulator"
+                            href="/obby"
+                            src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+                            description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                        /> */}
+                    </div>
+                </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="Links">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="https://www.linkedin.com/in/ryan-abdi/">
+                            LinkedIn
+                        </HoveredLink>
+                        <HoveredLink href="https://github.com/RyanAbdi">
+                            Github
+                        </HoveredLink>
+                        <HoveredLink href="/resume">Resume</HoveredLink>
+                        <HoveredLink href="/transcript">Transcript</HoveredLink>
+                    </div>
+                </MenuItem>
+            </Menu>
+        </div>
+    );
+}
