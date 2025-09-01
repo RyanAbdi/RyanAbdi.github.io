@@ -9,7 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
-import { winter, battleship } from "@/src/Images";
+import { winter, battleship } from "@/public";
 
 export function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);

@@ -4,7 +4,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { FlipWords } from "@/components/ui/flip-words";
-import pfp from "@/src/Images/HarbourPicture.jpg";
+import pfp from "@/public/HarbourPicture.jpg";
 import Image from "next/image";
 import { text } from "stream/consumers";
 
