@@ -69,7 +69,7 @@ export function Navbar({ className }: { className?: string }) {
                         <ProductItem
                             title="Art Higher or Lower"
                             href="/art"
-                            src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+                            src="Art.png"
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                         <ProductItem
