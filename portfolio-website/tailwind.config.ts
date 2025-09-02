@@ -10,7 +10,7 @@ const config: Config = {
     theme: {
         extend: {
             animation: {
-                scroll: "scroll var(--animation-duration,40s) linear infinite var(--animation-direction,forwards)",
+                scroll: "scroll var(--animation-duration,40s) var(--animation-direction,forwards) linear infinite",
             },
             keyframes: {
                 scroll: {
