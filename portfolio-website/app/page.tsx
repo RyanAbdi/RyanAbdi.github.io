@@ -84,6 +84,8 @@ export default function Home() {
                             <Image
                                 src="/HarbourPicture.jpg"
                                 alt="A Picture of me!"
+                                width={611}
+                                height={611}
                                 className="object-contain rounded-full w-[40rem]"
                             />
                         </BackgroundGradient>
