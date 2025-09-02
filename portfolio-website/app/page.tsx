@@ -82,7 +82,7 @@ export default function Home() {
                     <div className="flex justify-center">
                         <BackgroundGradient className=" rounded-full bg-white dark:bg-zinc-900">
                             <Image
-                                src="/RyanAbdi.github.io/HarbourPicture.jpg"
+                                src="/HarbourPicture.jpg"
                                 alt="A Picture of me!"
                                 width={611}
                                 height={611}
