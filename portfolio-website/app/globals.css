@@ -1,3 +1,8 @@
+/* Ensure default animation variables for scroller */
+.scroller {
+    --animation-duration: 40s;
+    --animation-direction: forwards;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
