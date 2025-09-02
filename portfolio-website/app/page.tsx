@@ -4,7 +4,6 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { FlipWords } from "@/components/ui/flip-words";
-import pfp from "@/public/HarbourPicture.jpg";
 import Image from "next/image";
 import { text } from "stream/consumers";
 
@@ -83,7 +82,7 @@ export default function Home() {
                     <div className="flex justify-center">
                         <BackgroundGradient className=" rounded-full bg-white dark:bg-zinc-900">
                             <Image
-                                src={pfp}
+                                src="/HarbourPicture.jpg"
                                 alt="A Picture of me!"
                                 className="object-contain rounded-full w-[40rem]"
                             />
